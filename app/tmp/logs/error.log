@@ -1,0 +1,73 @@
+2015-03-11 16:06:30 Error: [MissingControllerException] Controller class CategoriaController could not be found.
+Exception Attributes: array (
+  'class' => 'CategoriaController',
+  'plugin' => NULL,
+)
+Request URL: /inscripcion/categoria
+Stack Trace:
+#0 /var/www/html/inscripcion/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-03-11 16:07:53 Error: [PDOException] SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "jurisdiccions_id_seq" does not exist
+Request URL: /inscripcion/jurisdiccions/add
+Stack Trace:
+#0 /var/www/html/inscripcion/lib/Cake/Model/Datasource/Database/Postgres.php(296): PDO->lastInsertId('jurisdiccions_i...')
+#1 /var/www/html/inscripcion/lib/Cake/Model/Datasource/DboSource.php(1014): Postgres->lastInsertId('jurisdiccions', 'id')
+#2 /var/www/html/inscripcion/lib/Cake/Model/Model.php(1928): DboSource->create(Object(Jurisdiccion), Array, Array)
+#3 /var/www/html/inscripcion/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#4 /var/www/html/inscripcion/app/Controller/JurisdiccionsController.php(51): Model->save(Array)
+#5 [internal function]: JurisdiccionsController->add()
+#6 /var/www/html/inscripcion/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(JurisdiccionsController), Array)
+#7 /var/www/html/inscripcion/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/html/inscripcion/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(JurisdiccionsController), Object(CakeRequest))
+#9 /var/www/html/inscripcion/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-03-11 16:18:12 Error: [MissingViewException] View file "Instits/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Instits/add.ctp',
+)
+Request URL: /inscripcion/instits/add
+Stack Trace:
+#0 /var/www/html/inscripcion/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/inscripcion/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /var/www/html/inscripcion/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/inscripcion/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(InstitsController), Object(CakeRequest))
+#4 /var/www/html/inscripcion/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-11 16:20:52 Error: [MissingViewException] View file "Instits/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Instits/add.ctp',
+)
+Request URL: /inscripcion/instits/add
+Stack Trace:
+#0 /var/www/html/inscripcion/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/inscripcion/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /var/www/html/inscripcion/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/inscripcion/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(InstitsController), Object(CakeRequest))
+#4 /var/www/html/inscripcion/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-12 10:22:42 Error: [MissingComponentException] Component class ToolbarComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ToolbarComponent',
+  'plugin' => 'DebugKit',
+)
+Request URL: /inscripcion/
+Stack Trace:
+#0 /var/www/html/inscripcion/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#1 /var/www/html/inscripcion/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(PagesController))
+#2 /var/www/html/inscripcion/lib/Cake/Routing/Dispatcher.php(188): Controller->constructClasses()
+#3 /var/www/html/inscripcion/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#4 /var/www/html/inscripcion/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-03-12 10:22:43 Error: [MissingComponentException] Component class ToolbarComponent could not be found.
+Exception Attributes: array (
+  'class' => 'ToolbarComponent',
+  'plugin' => 'DebugKit',
+)
+Request URL: /inscripcion/
+Stack Trace:
+#0 /var/www/html/inscripcion/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#1 /var/www/html/inscripcion/lib/Cake/Controller/Controller.php(643): ComponentCollection->init(Object(PagesController))
+#2 /var/www/html/inscripcion/lib/Cake/Routing/Dispatcher.php(188): Controller->constructClasses()
+#3 /var/www/html/inscripcion/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#4 /var/www/html/inscripcion/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
